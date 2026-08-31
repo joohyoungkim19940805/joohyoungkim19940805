@@ -8,7 +8,7 @@ I build typed, reactive tooling for both frontend and backend:
 On the backend side, I build:
 
 - **com.byeolnaerim:webflux-fe-dev-assistant** — analyzes WebFlux functional routes to generate **OpenAPI / AsyncAPI / custom specs**
-- **com.byeolnaerim:reactive-mongo-dsl** — a fluent DSL on top of Spring Data **ReactiveMongoTemplate** that unifies reactive queries, aggregations, `$lookup`-style joins, and atomic updates into a single flow, reducing boilerplate for dynamic search, paging, and compound conditions
+- **com.byeolnaerim:reactive-mongo-dsl** — a fluent, Reactor-based MongoDB DSL built directly on the **MongoDB Reactive Streams Driver**, unifying dynamic queries, paging, aggregations, `$lookup`, grouping, atomic updates, bulk operations, **Atlas Search**, and **Vector Search** behind a single API, with pluggable execution contexts for multi-database routing and optional Spring Data MongoDB integration
 
 I’m also preparing **@byeolnaerim/free-will-editor** (coming soon) — a TypeScript, interface-driven text editor built for deep customization, where the editor’s formatting is defined by composing and extending simple interfaces.
 
@@ -25,7 +25,7 @@ Your support helps fund development, testing, documentation, and long-term maint
 백엔드 쪽으로는 다음 프로젝트를 개발하고 있습니다:
 
 - **com.byeolnaerim:webflux-fe-dev-assistant** — WebFlux functional route를 분석해 **OpenAPI / AsyncAPI / 커스텀 스펙**을 자동 생성
-- **com.byeolnaerim:reactive-mongo-dsl** — Spring Data **ReactiveMongoTemplate** 위에서 리액티브 쿼리/집계/`$lookup` 조인/원자적 업데이트를 하나의 fluent DSL 흐름으로 묶어, 동적 검색/페이징/조합 조건 작성 시 보일러플레이트를 크게 줄여주는 도구
+- **com.byeolnaerim:reactive-mongo-dsl** — **MongoDB Reactive Streams Driver**와 Reactor를 직접 기반으로 하는 fluent MongoDB DSL로, 동적 쿼리/페이징/집계/`$lookup`/그룹화/원자적 업데이트/bulk operation/**Atlas Search**/**Vector Search**를 하나의 API 흐름으로 통합하고, 실행 컨텍스트 추상화를 통한 멀티 데이터베이스 라우팅과 선택적인 Spring Data MongoDB 연동을 지원
 
 또한 **@byeolnaerim/free-will-editor**(출시 준비 중)도 개발하고 있습니다. TypeScript 기반의 인터페이스 중심 텍스트 에디터로, 에디터의 서식을 간단한 인터페이스들을 조합/확장해 자유롭게 커스터마이징할 수 있도록 설계했습니다.
 
